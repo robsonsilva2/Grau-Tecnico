@@ -1,16 +1,19 @@
 # check_guest.py
-# Script para verificar se um nome está na lista de convidados.
+# Script para verificar se um nome está na lista de convidados e se o convidado é maior de idade.
 
 def check_guest(name, guest_list):
-    # Verifica se o nome fornecido está na lista de convidados.
+    # Verifica se o nome fornecido está na lista de convidados e se o convidado é maior de idade.
     if name in guest_list:
-        print("Acesso permitido.")
+        if guest_list[name] >= 18:
+            print("Acesso permitido.")
+        else:
+            print("Você foi convidado, mas é menor de idade.")
     else:
-        print("Acesso negado.")
+        print("Acesso negado. Nome não encontrado na lista.")
 
 def main():
-    # Lista de convidados autorizados
-    guest_list = ["Alice", "Bob", "Charlie", "Diana"]
+    # Lista de convidados autorizados com suas respectivas idades
+    guest_list = {"Alice": 25, "Bob": 17, "Charlie": 22, "Diana": 15}
 
     # Solicita ao usuário que digite um nome
     name = input("Digite o nome do convidado: ")
