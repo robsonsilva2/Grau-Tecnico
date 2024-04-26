@@ -10,7 +10,13 @@ public class CheckGuest {
         guestList.put("Alice", 25);
         guestList.put("Bob", 17);
         guestList.put("Charlie", 22);
-        guestList.put("Diana", 15);
+        guestList.put("Diana", 15); 
+        guestList.put("robson", 29);
+        guestList.put("carla", 16);
+        guestList.put("thiago", 18);
+        guestList.put("marcela", 30);
+        guestList.put("vitor", 20);
+        
 
         // Cria um scanner para ler entradas do teclado
         Scanner scanner = new Scanner(System.in);

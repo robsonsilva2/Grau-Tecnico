@@ -13,7 +13,7 @@ def check_guest(name, guest_list):
 
 def main():
     # Lista de convidados autorizados com suas respectivas idades
-    guest_list = {"Alice": 25, "Bob": 17, "Charlie": 22, "Diana": 15}
+    guest_list = {"Alice": 25, "Bob": 17, "Charlie": 22, "Diana": 15, "vitor": 24, "amanda": 18, "robson": 16 }
 
     # Solicita ao usuário que digite um nome
     name = input("Digite o nome do convidado: ")
